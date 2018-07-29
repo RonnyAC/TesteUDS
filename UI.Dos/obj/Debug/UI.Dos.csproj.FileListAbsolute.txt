@@ -1,0 +1,14 @@
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\UI.Dos.exe.config
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\UI.Dos.exe
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\UI.Dos.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\obj\Debug\UI.Dos.csprojAssemblyReference.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\obj\Debug\UI.Dos.csproj.CoreCompileInputs.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\obj\Debug\UI.Dos.exe
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\obj\Debug\UI.Dos.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Aplicacao.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Dominio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Repositorio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Aplicacao.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Dominio.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\bin\Debug\TesteUDS.Repositorio.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\UI.Dos\obj\Debug\UI.Dos.csproj.CopyComplete

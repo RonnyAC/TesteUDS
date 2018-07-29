@@ -1,0 +1,6 @@
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\bin\Debug\TesteUDS.Dominio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\bin\Debug\TesteUDS.Dominio.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\obj\Debug\TesteUDS.Dominio.csprojAssemblyReference.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\obj\Debug\TesteUDS.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\obj\Debug\TesteUDS.Dominio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Dominio\obj\Debug\TesteUDS.Dominio.pdb
