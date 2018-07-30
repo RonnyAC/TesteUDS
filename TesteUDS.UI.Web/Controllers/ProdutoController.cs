@@ -25,7 +25,7 @@ namespace TesteUDS.UI.Web.Controllers {
             if (ModelState.IsValid) {
                 var appProduto = new ProdutoAplicacao();
                 appProduto.salvar(produto);
-                return RedirectToAction("Index");
+                return RedirectToAction("Pessoa");
             }
 
             return View(produto);
@@ -54,5 +54,36 @@ namespace TesteUDS.UI.Web.Controllers {
 
             return View(produto);
         }
+
+        public ActionResult Detalhes(Guid id) {
+            var appProduto = new ProdutoAplicacao();
+            var produto = appProduto.buscarProdutoId(id);
+
+            if (produto == null)
+                return HttpNotFound();
+
+            return View(produto);
+        }
+
+        public ActionResult Excluir(Guid id) {
+            var appProduto = new ProdutoAplicacao();
+            var produto = appProduto.buscarProdutoId(id);
+
+            if (produto == null)
+                return HttpNotFound();
+
+            return View(produto);
+        }
+
+        [HttpPost, ActionName("Excluir")]
+        [ValidateAntiForgeryToken]
+        public ActionResult ExcluirConfirmado(Guid id) {
+            var appProduto = new ProdutoAplicacao();
+            appProduto.excluir(id);
+
+            return RedirectToAction("Produtos");
+        }
+
+
     }
 }

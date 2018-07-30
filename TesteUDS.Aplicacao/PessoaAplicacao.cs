@@ -8,7 +8,7 @@ using TesteUDS.Dominio;
 using TesteUDS.Repositorio;
 
 namespace TesteUDS.Aplicacao {
-    class PessoaAplicacao {
+    public class PessoaAplicacao {
         private Contexto contexto;
 
         private void inserir(Pessoa pessoa) {
@@ -78,15 +78,10 @@ namespace TesteUDS.Aplicacao {
 
         public Pessoa buscarPessoaId(Guid id) {
             using (contexto = new Contexto()) {
-                var strQuery = string.Concat("SELECT * FROM pessoa WHERE id = '{0}'", id);
+                var strQuery = string.Concat("SELECT * FROM pessoa WHERE id = " + "'" + id + "'");
                 var reader = contexto.executaComandoRetorno(strQuery);
+                return transformaReaderEmLista(reader).FirstOrDefault();
 
-                Pessoa pessoa = new Pessoa(){
-                    id = Guid.Parse(reader["id"].ToString()),
-                    nome = reader["nome"].ToString(),
-                    dataNascimento = DateTime.Parse(reader["data_nascimento"].ToString())
-                };
-                return pessoa;
             }
         }
     }

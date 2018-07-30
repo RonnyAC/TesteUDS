@@ -9,3 +9,14 @@ C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Aplicacao\obj
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.csproj.CopyComplete
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.dll
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Aplicacao.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Aplicacao.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Dominio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Repositorio.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Dominio.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\TesteUDS.Repositorio.pdb
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.csprojAssemblyReference.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.csproj.CopyComplete
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.dll
+C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\obj\Debug\TesteUDS.Aplicacao.pdb

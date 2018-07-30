@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TesteUDS.Dominio.Pessoa>
+
+<label>Nome Cliente</label>
+
+<table class="table table-hover">
+    <tr>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.dataNascimento)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataNascimento)
+            </td>
+        </tr>
+    }
+
+</table>
