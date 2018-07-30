@@ -8,7 +8,7 @@ using TesteUDS.Dominio;
 
 namespace TesteUDS.UI.Web.Controllers {
     public class ProdutoController : Controller {
-        // GET: Produto
+        
         public ActionResult Produtos() {
             var appAluno = new ProdutoAplicacao();
             var listaDeAlunos = appAluno.listarProdutos();
@@ -25,7 +25,7 @@ namespace TesteUDS.UI.Web.Controllers {
             if (ModelState.IsValid) {
                 var appProduto = new ProdutoAplicacao();
                 appProduto.salvar(produto);
-                return RedirectToAction("Pessoa");
+                return RedirectToAction("Produtos");
             }
 
             return View(produto);

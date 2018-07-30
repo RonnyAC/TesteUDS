@@ -216,9 +216,12 @@
     <Content Include="Views\Pessoa\Detalhes.cshtml" />
     <Content Include="Views\Pessoa\Excluir.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Pedido\Produtos.cshtml" />
+    <Content Include="Views\Pedido\Pedidos.cshtml" />
+    <Content Include="Views\Pedido\Cadastrar.cshtml" />
+    <Content Include="Views\Pedido\AdicionarProdutos.cshtml" />
     <Content Include="Views\Pedido\NovoPedido.cshtml" />
-    <Content Include="Views\Pedido\ListarClientes.cshtml" />
-    <Content Include="Views\Pedido\ListarProdutos.cshtml" />
+    <Content Include="Views\Pedido\ListaDeClientes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

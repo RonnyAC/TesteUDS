@@ -1,7 +1,15 @@
 ﻿@model IEnumerable<TesteUDS.Dominio.Produto>
 
+@{
+    ViewBag.Title = "Produtos";
+}
 
-<table class="table">
+<h2>Produtos</h2>
+
+<p>
+    @Html.ActionLink("Proximo", "Cadastrar")
+</p>
+<table class="table table-bordered table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.codigo)
@@ -25,6 +33,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.precoUnitario)
+        </td>
+        <td>
+            @Html.ActionLink("Adicionar", "Edit", new { id=item.id })
         </td>
     </tr>
 }

@@ -8,12 +8,10 @@ using TesteUDS.Dominio;
 using TesteUDS.Repositorio;
 
 namespace TesteUDS.Aplicacao {
-    class PedidoAplicacao {
+    public class PedidoAplicacao {
         private Contexto contexto;
 
         private void inserir(Pedido pedido) {
-            pedido.id = Guid.NewGuid();
-
             string strQuery = string.Format("INSERT INTO pedido (id, cliente, numero, emissao, total)" +
                                             " VALUES ('{0}', '{1}', '{2}', '{3}', {4})",
                                               pedido.id, pedido.cliente.id, pedido.numero, pedido.total);
@@ -21,6 +19,13 @@ namespace TesteUDS.Aplicacao {
             using (contexto = new Contexto()) {
                 contexto.executaComando(strQuery);
             }
+        }
+
+        public Pedido criaPedido() {
+            var pedido = new Pedido();
+            pedido.id = Guid.NewGuid();
+            pedido.numero = 0;
+            return pedido;
         }
 
         private void alterar(Pedido pedido) {

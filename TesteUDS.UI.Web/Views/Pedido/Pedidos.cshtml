@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TesteUDS.Dominio.Pedido>
+
+@{
+    ViewBag.Title = "NovoPedido";
+}
+
+<h2>NovoPedido</h2>
+
+<p>
+    @Html.ActionLink("Novo Pedido", "NovoPedido")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emissao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emissao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.id }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { id=item.id }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

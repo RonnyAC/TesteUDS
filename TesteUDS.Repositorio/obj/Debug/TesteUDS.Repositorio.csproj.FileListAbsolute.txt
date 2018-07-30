@@ -4,3 +4,8 @@ C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Repositorio\o
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.csproj.CoreCompileInputs.cache
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.dll
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.pdb
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Repositorio\bin\Debug\TesteUDS.Repositorio.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Repositorio\bin\Debug\TesteUDS.Repositorio.pdb
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Repositorio\obj\Debug\TesteUDS.Repositorio.pdb
