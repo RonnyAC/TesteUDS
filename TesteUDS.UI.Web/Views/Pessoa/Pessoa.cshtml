@@ -9,6 +9,7 @@
 <p>
     @Html.ActionLink("Novo", "Cadastrar")
 </p>
+
 <table class="table">
     <tr>
         <th>
@@ -20,20 +21,20 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dataNascimento.Date)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Editar", new { id = item.id }) |
-            @Html.ActionLink("Detalhes", "Detalhes", new { id = item.id }) |
-            @Html.ActionLink("Excluir", "Excluir", new { id = item.id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataNascimento.Date)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.id }) |
+                @Html.ActionLink("Detalhes", "Detalhes", new { id = item.id }) |
+                @Html.ActionLink("Excluir", "Excluir", new { id = item.id })
+            </td>
+        </tr>
+    }
 
 </table>

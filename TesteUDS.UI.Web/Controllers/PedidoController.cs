@@ -17,58 +17,26 @@ namespace TesteUDS.UI.Web.Controllers {
 
         public ActionResult NovoPedido() {
             var appPessoa = new PessoaAplicacao();
-            var cliente = appPessoa.listarPessoas();
-            return View(cliente);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult NovoPedido(Pedido pedido) {
-            if (ModelState.IsValid) {
-                var appPedido = new PedidoAplicacao();
-                appPedido.salvar(pedido);
-                return RedirectToAction("Pessoa");
-            }
-
-            return View(pedido);
-        }
-
-        public ActionResult AdicionarProdutos(Pessoa cliente) {
-            var appPedido = new PedidoAplicacao();
-            var pedido = new Pedido();
-            appPedido.salvar(pedido);
-
-
-            return View(pedido.id);
+            var listaDePessoas = appPessoa.listarPessoas();
+            return View(listaDePessoas);
         }
 
         public ActionResult Cliente(Guid id) {
-            var appCliente = new PessoaAplicacao();
-            var pessoa = appCliente.buscarPessoaId(id);
-            return View(pessoa);
-        }
-
-        public ActionResult ListaDeProdutos() {
-            var appProduto = new ProdutoAplicacao();
-            var listaDeProdutos = appProduto.listarProdutos();
-            return PartialView(listaDeProdutos);
-        }
-
-        public ActionResult Cadastrar() {
-            return View();
+            return PartialView();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Cadastrar(Pedido pedido) {
-            if (ModelState.IsValid) {
-                var appPedido = new PedidoAplicacao();
-                appPedido.salvar(pedido);
-                return RedirectToAction("Pedidos");
-            }
-
-            return View(pedido);
-
+        public ActionResult NovoPedidoConfirmado() {
+            var appPedido = new PedidoAplicacao();
+            var pedido = appPedido.criaPedido();
+            appPedido.salvar(pedido);
+            return View();
         }
+        public ActionResult InserirProdutos() {
+            return View();
+        }
+
+
+
     }
 }

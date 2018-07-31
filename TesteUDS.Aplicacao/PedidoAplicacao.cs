@@ -12,9 +12,10 @@ namespace TesteUDS.Aplicacao {
         private Contexto contexto;
 
         private void inserir(Pedido pedido) {
-            string strQuery = string.Format("INSERT INTO pedido (id, cliente, numero, emissao, total)" +
+            pedido.id = Guid.NewGuid();
+            string strQuery = string.Format("INSERT INTO pedido (id, id_pessoa, numero, emissao, total)" +
                                             " VALUES ('{0}', '{1}', '{2}', '{3}', {4})",
-                                              pedido.id, pedido.cliente.id, pedido.numero, pedido.total);
+                                              pedido.id, pedido.cliente.id, pedido.numero, pedido.emissao, pedido.total);
 
             using (contexto = new Contexto()) {
                 contexto.executaComando(strQuery);
@@ -22,9 +23,9 @@ namespace TesteUDS.Aplicacao {
         }
 
         public Pedido criaPedido() {
-            var pedido = new Pedido();
-            pedido.id = Guid.NewGuid();
+            Pedido pedido = new Pedido();
             pedido.numero = 0;
+            pedido.total = 0.0;
             return pedido;
         }
 
@@ -74,7 +75,7 @@ namespace TesteUDS.Aplicacao {
             var pedidos = new List<Pedido>();
 
             while (reader.Read()) {
-                var pedido = new Pedido(){
+                Pedido pedido = new Pedido(){
                     id = Guid.Parse(reader["id"].ToString()),
                     cliente = appPessoa.buscarPessoaId(Guid.Parse(reader["cliente"].ToString())),
                     numero = Int32.Parse(reader["nome"].ToString()),

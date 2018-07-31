@@ -85,5 +85,25 @@ namespace TesteUDS.Aplicacao {
 
             }
         }
+
+        public List<Pessoa> buscarPessoa(String nome, DateTime dataNascimento) {
+
+            using (contexto = new Contexto()) {
+                String strQuery = null;
+
+                if (nome == null && dataNascimento == null) {
+                    strQuery = "SELECT * FROM pessoa";
+                } else if (nome == null) {
+                    strQuery = string.Concat("SELECT * FROM pessoa WHERE data_nascimento = " + "'" + dataNascimento + "'");
+                }else if(dataNascimento == null) {
+                    strQuery = string.Concat("SELECT * FROM pessoa WHERE nome = " + "'" + nome + "'");
+                } else {
+                    strQuery = string.Concat("SELECT * FROM pessoa WHERE data_nascimento = " + "'" + dataNascimento + "' AND nome = " + "'" + nome + "'");
+                }
+
+                var reader = contexto.executaComandoRetorno(strQuery);
+                return transformaReaderEmLista(reader);
+            }
+        }
     }
 }

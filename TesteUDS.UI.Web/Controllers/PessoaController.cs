@@ -79,16 +79,6 @@ namespace TesteUDS.UI.Web.Controllers {
             return RedirectToAction("Pessoa");
         }
 
-        public ActionResult NovoPedidoTeste(Guid id) {
-            var appPessoa = new PessoaAplicacao();
-            var pessoa = appPessoa.buscarPessoaId(id);
-
-            if (pessoa == null)
-                return HttpNotFound();
-
-            return View(pessoa);
-        }
-
         public ActionResult NomeUnico(String nome) {
             var appPessoa = new PessoaAplicacao();
             var pessoas = appPessoa.listarPessoas();

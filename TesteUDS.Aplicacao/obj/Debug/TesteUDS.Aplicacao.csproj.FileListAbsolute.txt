@@ -47,3 +47,19 @@ C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bi
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.WebPages.Razor.resources.dll
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.Razor.resources.dll
 C:\Users\Ronny\Google Drive (ra77903@uem.br)\UDS\Teste_UDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.Mvc.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.Razor.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.Mvc.xml
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.xml
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.Razor.xml
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.Razor.resources.dll
+C:\Users\Ronny\Documents\TesteUDS\TesteUDS.Aplicacao\bin\Debug\pt-br\System.Web.WebPages.Deployment.resources.dll

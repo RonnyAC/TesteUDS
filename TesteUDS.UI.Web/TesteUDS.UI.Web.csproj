@@ -218,6 +218,7 @@
     <Content Include="Scripts\inputmask\phone-codes\phone-ru.min.js" />
     <Content Include="Scripts\inputmask\phone-codes\phone.js" />
     <Content Include="Scripts\inputmask\phone-codes\phone.min.js" />
+    <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -254,13 +255,11 @@
     <Content Include="Views\Pessoa\Detalhes.cshtml" />
     <Content Include="Views\Pessoa\Excluir.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Pedido\Produtos.cshtml" />
     <Content Include="Views\Pedido\Pedidos.cshtml" />
-    <Content Include="Views\Pedido\Cadastrar.cshtml" />
-    <Content Include="Views\Pedido\AdicionarProdutos.cshtml" />
     <Content Include="Views\Pedido\NovoPedido.cshtml" />
-    <Content Include="Views\Pedido\ListaDeProdutos.cshtml" />
+    <Content Include="Views\Pedido\InserirProdutos.cshtml" />
     <Content Include="Views\Pedido\Cliente.cshtml" />
+    <Content Include="Views\Pedido\NovoPedidoConfirmado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
