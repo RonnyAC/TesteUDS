@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -8,7 +9,7 @@ using TesteUDS.Dominio;
 
 namespace TesteUDS.UI.Web.Controllers {
     public class ProdutoController : Controller {
-        
+
         public ActionResult Produtos() {
             var appAluno = new ProdutoAplicacao();
             var listaDeAlunos = appAluno.listarProdutos();
@@ -22,13 +23,9 @@ namespace TesteUDS.UI.Web.Controllers {
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Cadastrar(Produto produto) {
-            if (ModelState.IsValid) {
                 var appProduto = new ProdutoAplicacao();
                 appProduto.salvar(produto);
                 return RedirectToAction("Produtos");
-            }
-
-            return View(produto);
         }
 
 
@@ -46,13 +43,9 @@ namespace TesteUDS.UI.Web.Controllers {
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Editar(Produto produto) {
-            if (ModelState.IsValid) {
-                var appProduto = new ProdutoAplicacao();
-                appProduto.salvar(produto);
-                return RedirectToAction("Index");
-            }
-
-            return View(produto);
+            var appProduto = new ProdutoAplicacao();
+            appProduto.salvar(produto);
+            return RedirectToAction("Produtos");
         }
 
         public ActionResult Detalhes(Guid id) {
@@ -84,6 +77,26 @@ namespace TesteUDS.UI.Web.Controllers {
             return RedirectToAction("Produtos");
         }
 
+        public ActionResult CodigoUnico(String codigo) {
+            var appProduto = new ProdutoAplicacao();
+            var produtos = appProduto.listarProdutos();
+            var codigos = new List<String>();
 
+            foreach (var item in produtos) {
+                codigos.Add(item.codigo);
+            }
+            return Json(codigos.All(x => x.ToLower() != codigo.ToLower()), JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult NomeUnico(String nome) {
+            var appProduto = new ProdutoAplicacao();
+            var produtos = appProduto.listarProdutos();
+            var nomes = new List<String>();
+
+            foreach (var item in produtos) {
+                nomes.Add(item.nome);
+            }
+            return Json(nomes.All(x => x.ToLower() != nome.ToLower()), JsonRequestBehavior.AllowGet);
+        }
     }
 }

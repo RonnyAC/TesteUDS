@@ -45,13 +45,9 @@ namespace TesteUDS.UI.Web.Controllers {
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Editar(Pessoa pessoa) {
-            if (ModelState.IsValid) {
                 var appPessoa = new PessoaAplicacao();
                 appPessoa.salvar(pessoa);
                 return RedirectToAction("Pessoa");
-            }
-
-            return View(pessoa);
         }
 
         public ActionResult Detalhes(Guid id) {
@@ -91,6 +87,17 @@ namespace TesteUDS.UI.Web.Controllers {
                 return HttpNotFound();
 
             return View(pessoa);
+        }
+
+        public ActionResult NomeUnico(String nome) {
+            var appPessoa = new PessoaAplicacao();
+            var pessoas = appPessoa.listarPessoas();
+            var nomes = new List<String>();
+
+            foreach (var item in pessoas) {
+                nomes.Add(item.nome);
+            }
+            return Json(nomes.All(x => x.ToLower() != nome.ToLower()), JsonRequestBehavior.AllowGet);
         }
     }
 }

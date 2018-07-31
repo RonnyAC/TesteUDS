@@ -16,30 +16,42 @@ namespace TesteUDS.UI.Web.Controllers {
         }
 
         public ActionResult NovoPedido() {
-            var appPedido = new PedidoAplicacao();
-            var pedido = appPedido.criaPedido();
-            return View(pedido);
-        }
-
-        public ActionResult ListaDeClientes() {
             var appPessoa = new PessoaAplicacao();
-            var listaDeClientes = appPessoa.listarPessoas();
-            return PartialView(listaDeClientes);
-        }
-
-        public ActionResult AdicionarProdutos(Guid id) {
-            var appPessoa = new PessoaAplicacao();
-            var cliente = appPessoa.buscarPessoaId(id);
-            if (cliente == null)
-                return HttpNotFound();
-
+            var cliente = appPessoa.listarPessoas();
             return View(cliente);
         }
 
-        public ActionResult Produtos() {
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult NovoPedido(Pedido pedido) {
+            if (ModelState.IsValid) {
+                var appPedido = new PedidoAplicacao();
+                appPedido.salvar(pedido);
+                return RedirectToAction("Pessoa");
+            }
+
+            return View(pedido);
+        }
+
+        public ActionResult AdicionarProdutos(Pessoa cliente) {
+            var appPedido = new PedidoAplicacao();
+            var pedido = new Pedido();
+            appPedido.salvar(pedido);
+
+
+            return View(pedido.id);
+        }
+
+        public ActionResult Cliente(Guid id) {
+            var appCliente = new PessoaAplicacao();
+            var pessoa = appCliente.buscarPessoaId(id);
+            return View(pessoa);
+        }
+
+        public ActionResult ListaDeProdutos() {
             var appProduto = new ProdutoAplicacao();
             var listaDeProdutos = appProduto.listarProdutos();
-            return View(listaDeProdutos);
+            return PartialView(listaDeProdutos);
         }
 
         public ActionResult Cadastrar() {

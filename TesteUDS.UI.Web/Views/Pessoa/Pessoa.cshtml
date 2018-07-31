@@ -26,10 +26,9 @@
             @Html.DisplayFor(modelItem => item.nome)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.dataNascimento)
+            @Html.DisplayFor(modelItem => item.dataNascimento.Date)
         </td>
         <td>
-            @Html.ActionLink("Novo Pedido", "Pedido", new { id = item.id }) |
             @Html.ActionLink("Editar", "Editar", new { id = item.id }) |
             @Html.ActionLink("Detalhes", "Detalhes", new { id = item.id }) |
             @Html.ActionLink("Excluir", "Excluir", new { id = item.id })
