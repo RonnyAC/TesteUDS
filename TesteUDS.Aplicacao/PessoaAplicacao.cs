@@ -70,6 +70,7 @@ namespace TesteUDS.Aplicacao {
                     nome = reader["nome"].ToString(),
                     dataNascimento = DateTime.Parse(reader["data_nascimento"].ToString())
                 };
+
                 pessoas.Add(pessoa);
             }
             reader.Close();
